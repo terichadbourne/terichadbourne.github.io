@@ -65,7 +65,7 @@
 							<li class="nav-item mr-lg-3">
 							    <a class="nav-link" href="resume.html">Resume</a>
 							</li>
-							<li class="nav-item mr-lg-3">
+							<!-- <li class="nav-item mr-lg-3">
 							    <a class="nav-link" href="contact.html">Contact</a>
 							</li>
 							<li class="nav-item dropdown mr-0">
@@ -77,7 +77,7 @@
 									<a class="dropdown-item" href="project-alt.html">Project Case Study (2 Columns)</a>
 									<a class="dropdown-item" href="blog-post.html">Blog Post</a>
 								</div>
-							</li>
+							</li> -->
 
 						</ul>
 						<span id="slide-line"></span>
@@ -107,6 +107,8 @@
 		        <ul id="filters" class="filters mb-5 mx-auto pl-0">
 	                <li class="type active" data-filter="*">All</li>
 	                <li class="type" data-filter=".angular">Angular</li>
+                  <li class="type" data-filter=".javascript">JavaScript</li>
+	                <li class="type" data-filter=".jquery">jQuery</li>
 	                <li class="type" data-filter=".react">React</li>
 	                <li class="type" data-filter=".python-django">Python/Django</li>
 	                <li class="type" data-filter=".ruby-rails">Ruby/Rails</li>
@@ -115,29 +117,29 @@
 	        </div>
 
 	        <div class="project-cards row mb-5 isotope">
-		        <div class="isotope-item col-12 col-lg-4 angular python-django">
+		        <div class="isotope-item col-12 col-lg-4 javascript jquery">
 					<div class="card rounded-0 border-0 shadow-sm mb-5">
 						<div class="card-img-container position-relative">
-							<img class="card-img-top rounded-0" src="assets/images/projects/project-1-thumb.jpg" alt="">
-							<div class="card-img-overlay overlay-logo text-center">
-								<div class="project-logo"><img class="img-fluid w-50" src="assets/images/logos/logo-1-inverse.svg"></div>
-							</div>
-							<a class="card-img-overlay overlay-content text-left p-lg-4" href="project.html">
-								<h5 class="card-title font-weight-bold">Client: Google</h5>
-							    <p class="card-text">Project summary goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel sapien quis nulla dictum euismod...</p>
-							</a>
-						</div>
-						<div class="card-body pb-0">
-							<h4 class="card-title text-truncate text-center mb-0"><a href="project.html">SaaS Product</a></h4>
-						</div>
+              <img class="card-img-top rounded-0" src="assets/images/projects/project-toilet-transcripts-thumb.png" alt="">
+              <div class="card-img-overlay overlay-logo text-center">
+                <!-- <div class="project-logo"><img class="img-fluid w-50" src="assets/images/logos/logo-1-inverse.svg"></div> -->
+              </div>
+              <a class="card-img-overlay overlay-content text-left p-lg-4" href="project-toilet-transcripts.html">
+                <h5 class="card-title font-weight-bold">The Toilet Transcripts</h5>
+                  <p class="card-text">My first static website, featuring image carousels and embedded video and audio, built as a capstone for a front-end web development course</p>
+              </a>
+            </div>
+            <div class="card-body pb-0">
+              <h4 class="card-title text-truncate text-center mb-0"><a href="project-toilet-transcripts.html">The Toilet Transcripts</a></h4>
+            </div>
 
-						<div class="card-footer border-0 text-center bg-white pb-4">
-							<ul class="list-inline mb-0 mx-auto">
-						        <li class="list-inline-item"><span class="badge badge-secondary badge-pill">Angular</span></li>
-						        <li class="list-inline-item"><span class="badge badge-secondary badge-pill" >Django</span></li>
-						        <li class="list-inline-item"><span class="badge badge-secondary badge-pill">MongoDB</span></li>
-						        <li class="list-inline-item"><span class="badge badge-secondary badge-pill">HTML/CSS</span></li>
-							</ul>
+            <div class="card-footer border-0 text-center bg-white pb-4">
+              <ul class="list-inline mb-0 mx-auto">
+                    <li class="list-inline-item"><span class="badge badge-secondary badge-pill">JavaScript</span></li>
+                    <li class="list-inline-item"><span class="badge badge-secondary badge-pill">jQuery</span></li>
+                    <li class="list-inline-item"><span class="badge badge-secondary badge-pill">HTML</span></li>
+                    <li class="list-inline-item"><span class="badge badge-secondary badge-pill">CSS</span></li>
+              </ul>
 					    </div>
 				    </div><!--//card-->
 		        </div><!--//isotope-item-->
@@ -360,24 +362,25 @@
     </section><!--//section-->
 
 
-	<section class="section py-5 bg-primary text-white">
-		<div class="container">
-			<div class="text-center">
-			    <img class="profile-small d-inline-block mx-auto rounded-circle mb-2" src="assets/images/profile.jpg" alt="">
-		    </div>
-		    <h3 class="section-title font-weight-bold text-center mb-2">Interested in hiring me for your project?</h3>
-		    <div class="section-intro mx-auto text-center mb-3">
-			    Looking for an experienced full-stack developer to build your web app or ship your software product? To start an initial chat, just drop me an email at <a class="link-on-bg" href="#">teri.chadbourne@gmail.com</a> or use the <a class="link-on-bg" href="contact.html">form on the contact page</a>.
-		    </div>
-		    <div class="text-center">
-		        <a class="theme-btn-on-bg btn" href="contact.html">Let's Talk</a>
-		    </div>
-		</div><!--//container-->
-	</section>
+    <section class="section-cta py-5 bg-primary text-white">
+  		<div class="container">
+  			<div class="text-center">
+  			    <img class="profile-small d-inline-block mx-auto rounded-circle mb-2" src="assets/images/profile.jpg" alt="">
+  		    </div>
+  		    <h3 class="section-title font-weight-bold text-center mb-2">Interested in hiring me?</h3>
+  		    <div class="section-intro mx-auto text-center mb-3">
+            Working to grow the developer community that uses your technology? Need a full-stack developer to build your next web app?
+  		    </div>
 
-    <footer class="footer text-light text-center py-2">
+  		    <div class="text-center">
+  		        <a class="theme-btn-on-bg btn" href="mailto:teri.chadbourne@gmail.com">Let's Talk</a>
+  		    </div>
+  		</div><!--//container-->
+  	</section>
+
+    <!-- <footer class="footer text-light text-center py-2">
 	    <small class="copyright">Template Copyright &copy; <a class="text-light" href="https://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a></small>
-    </footer>
+    </footer> -->
 
 
     <!-- *****CONFIGURE STYLE (REMOVE ON YOUR PRODUCTION SITE)****** -->
