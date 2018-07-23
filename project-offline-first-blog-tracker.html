@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="favicon.ico">
 
     <!-- Google Font -->
-    <link href='//fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
     <!-- FontAwesome JS-->
     <script type="text/javascript" src="assets/plugins/font-awesome/js/fontawesome-all.min.js"></script>
@@ -57,7 +57,7 @@
 							    <a class="nav-link" href="index.html">About</a>
 							</li>
 							<li class="nav-item active mr-lg-3">
-							   <a class="nav-link" href="projects.html">Projects <span class="sr-only">(current)</span></a>
+							   <a class="nav-link" href="index.html#projects">Projects <span class="sr-only">(current)</span></a>
 							</li>
 							<li class="nav-item mr-lg-3">
 							    <a class="nav-link" href="talks.html">Talks</a>
@@ -108,13 +108,17 @@
 	    <div class="row">
 	        <section class="col-12 col-lg-8">
 		        <div class="section-row">
-			        <div class="mb-5"><img class="img-fluid" src="assets/images/projects/project-blog-tracker-thumb.png" alt=""></div>
+			        <div class="mb-5"><img class="img-fluid" src="assets/images/projects/project-blog-tracker-feature.png" alt=""></div>
 			        <h3 class="section-title">Project Background</h3>
 
-			        <p>The Offline First Blog Tracker is my first Progressive Web App,
-                built as a capstone project for a JavaScript course at Harvard
-                Extension School in 2017. The offline-capable project management
-                tool uses the in-browser JavaScript database PouchDB for
+			        <p>The Offline First Blog Tracker is a Progressive Web App built
+                to track the status of blog posts in the works for the
+                <a href="https://medium.com/offline-camp" target="_blank">
+                Offline Camp Medium publication</a>, of which I'm a managing
+                editor. I developed this offline-capable project management
+                tool as a capstone project for a graduate-level JavaScript
+                course at Harvard Extension School in 2017. The
+                app uses the in-browser JavaScript database PouchDB for
                 client-side storage, syncing to a remote IBM Cloudant database
                 to share data between users when a network connection is available.
                 These two NoSQL document stores work together using the Apache
@@ -123,11 +127,12 @@
                 workers to ensure the page can be loaded while offline.
               </p>
 
-              <p>The GitHub repo for this project includes detialed instructions
+              <p>The <a href="https://github.com/terichadbourne/offline-first-project-manager" target="_blank">
+                GitHub repo</a> for this project includes detailed instructions
                 for running the app on your own machine. Alternatively, you can
-                view my conference talk that walks through the app and the code
-                behind it, or read my 2-part tutorial series on buiding Offline
-                First applications.
+                view my <a href="#demo">conference talk</a> that walks through the app and the code
+                behind it, or read my 2-part <a href="#tutorials">tutorial series</a>
+                on buiding Offline First applications.
               </p>
 
 			        <div class="mb-5">
@@ -202,6 +207,7 @@
       </div><!--//media-->
     </div> <!--//section-row -->
 
+    <a name="tutorials"></a>
     <div class="section-row">
     <h3 class="section-title">Tutorial Series</h3>
     <p>In preparation for my talk, I wrote a 2-part, beginner-friendly tutorial
@@ -217,6 +223,18 @@
           quick page loads — offline or not — with a service worker</a></li>
     </ul>
   </div> <!--//section-row -->
+
+  <div class="section-row">
+    <h3 class="section-title">Offline First Functionality</h3>
+    <p>The Offline First approach to web development plans for the most constrained network environment first, enabling a great user experience even while the device is offline or has only an intermittent connection, and providing progressive enhancement as network conditions improve. This design also makes apps incredibly performant (fast!) on the best of networks.</p>
+    <p>PouchDB, CouchDB, service workers, and a web app manifest are the primary tools that turn this simple project management tool into a high-performance, offline-capable Progressive Web App.</p>
+    <p><strong>Data stays safe on your device, even while it's offline.</strong> Persistance of data entered by the user is achieved using the in-browser database PouchDB. This will allow your data to survive between sessions and when disconnected from the network. (Whether you're offline at an event or back in the office on your trusty Wi-Fi, you can still add new projects and modify existing ones.)</p>
+    <p><strong>Data syncs between devices when a connection is available.</strong> When a connection is available, the data is synced from the local device to a CouchDB database in the cloud, and can thus be shared across multiple devices or users. (Managing a project with a partner or need to access the data on both your phone and your laptop? No problem!)</p>
+    <p><strong>The app loads quickly, even while offline.</strong> To keep the app itself functional while offline, a service worker is used to cache page resources (the most important HTML, CSS, and JavaScript files) when the web application is first visited. Each device must have a connection for this first visit, after which the app will be fully functional even while offline or in shoddy network conditions. (No more error messages or frustratingly slow page loads.)</p>
+    <p><strong>The app can be installed on a mobile device.</strong> In combination with the service worker used for caching, a web app manifest containing metadata allows the app to become a Progressive Web App, an enhanced website that can be installed on a mobile device and can then be used with or without an internet connection. (It's secretly still a website, but you can access it through one of those handy dandy little app icons on your homescreen!)</p>
+    <p>Explore the code in my <a href="https://github.com/terichadbourne/offline-first-project-manager" target="_blank">GitHub repository</a>, read my <a href="#tutorials">tutorials</a>, or watch my <a href="#demo">conference talk</a> to see how the Offline First design is applied.
+  </div> <!--//section-row -->
+
 </section>
 
 <!--
@@ -334,62 +352,44 @@
 	    </div><!--//row-->
     </div><!--//container-->
 
-    <section class="section pt-5 related-projects-section bg-white">
+    <section>
+      <div class="text-center mb-5">
+          <a class="btn btn-primary" href="index.html#projects">View all projects</a>
+      </div>
+    </section>
+
+    <!-- <section class="section pt-5 related-projects-section bg-white">
 		<div class="container">
 			<h3 class="section-title font-weight-bold text-center mb-4">Other Project Case Studies</h3>
 			<div class="project-cards row">
 
-				 <div class="col-12 col-lg-4">
-					<div class="card rounded-0 border-0 shadow-sm mb-5 mb-lg-0">
-						<div class="card-img-container position-relative">
-							<img class="card-img-top rounded-0" src="assets/images/projects/project-3-thumb.jpg" alt="">
-							<div class="card-img-overlay overlay-logo text-center">
-								<div class="project-logo"><img class="img-fluid w-50" src="assets/images/logos/logo-3-inverse.svg"></div>
-							</div>
-							<a class="card-img-overlay overlay-content text-left p-lg-4" href="project.html">
-								<h5 class="card-title font-weight-bold">Client: Airbnb</h5>
-							    <p class="card-text">Project summary goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel sapien quis nulla dictum euismod...</p>
-							</a>
-						</div>
-						<div class="card-body pb-0">
-							<h4 class="card-title text-truncate text-center mb-0"><a href="project.html">Mobile app development</a></h4>
-						</div>
+        <div class="isotope-item col-12 col-lg-4 javascript jquery">
+        <div class="card rounded-0 border-0 shadow-sm mb-5">
+        <div class="card-img-container position-relative">
+          <img class="card-img-top rounded-0" src="assets/images/projects/project-toilet-transcripts-thumb.png" alt="">
+          <div class="card-img-overlay overlay-logo text-center">
+             <div class="project-logo"><img class="img-fluid w-50" src="assets/images/logos/logo-1-inverse.svg"></div> -->
+          <!-- </div>
+          <a class="card-img-overlay overlay-content text-left p-lg-4" href="project-toilet-transcripts.html">
+            <h5 class="card-title font-weight-bold">The Toilet Transcripts</h5>
+              <p class="card-text">My first static website, featuring image carousels and embedded video and audio, built as a capstone for a front-end web development course</p>
+          </a>
+        </div>
+        <div class="card-body pb-0">
+          <h4 class="card-title text-truncate text-center mb-0"><a href="project-toilet-transcripts.html">The Toilet Transcripts</a></h4>
+        </div>
 
-						<div class="card-footer border-0 text-center bg-white pb-4">
-							<ul class="list-inline mb-0 mx-auto">
-						        <li class="list-inline-item"><span class="badge badge-secondary badge-pill">React</span></li>
-						        <li class="list-inline-item"><span class="badge badge-secondary badge-pill" >Python</span></li>
-						        <li class="list-inline-item"><span class="badge badge-secondary badge-pill">MySQL</span></li>
-						        <li class="list-inline-item"><span class="badge badge-secondary badge-pill">Webpack</span></li>
-							</ul>
-					    </div>
-				    </div><!--//card-->
-		        </div>
-		        <div class="col-12 col-lg-4">
-					<div class="card rounded-0 border-0 shadow-sm mb-5">
-						<div class="card-img-container position-relative">
-							<img class="card-img-top rounded-0" src="assets/images/projects/project-7-thumb.jpg" alt="">
-							<div class="card-img-overlay overlay-logo text-center">
-								<div class="project-logo"><img class="img-fluid w-50" src="assets/images/logos/logo-7-inverse.svg"></div>
-							</div>
-							<a class="card-img-overlay overlay-content text-left p-lg-4" href="project.html">
-								<h5 class="card-title font-weight-bold">Client: Facebook</h5>
-							    <p class="card-text">Project summary goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel sapien quis nulla dictum euismod...</p>
-							</a>
-						</div>
-						<div class="card-body pb-0">
-							<h4 class="card-title text-truncate text-center mb-0"><a href="project.html">Facebook Ads Manager</a></h4>
-						</div>
-
-						<div class="card-footer border-0 text-center bg-white pb-4">
-							<ul class="list-inline mb-0 mx-auto">
-						        <li class="list-inline-item"><span class="badge badge-secondary badge-pill">Angular</span></li>
-						        <li class="list-inline-item"><span class="badge badge-secondary badge-pill">PHP</span></li>
-						        <li class="list-inline-item"><span class="badge badge-secondary badge-pill">HTML/SaSS</span></li>
-							</ul>
-					    </div>
-				    </div><!--//card-->
-		        </div>
+        <div class="card-footer border-0 text-center bg-white pb-4">
+          <ul class="list-inline mb-0 mx-auto">
+                <li class="list-inline-item"><span class="badge badge-secondary badge-pill">JavaScript</span></li>
+                <li class="list-inline-item"><span class="badge badge-secondary badge-pill">jQuery</span></li>
+                <li class="list-inline-item"><span class="badge badge-secondary badge-pill">HTML</span></li>
+                <li class="list-inline-item"><span class="badge badge-secondary badge-pill">CSS</span></li>
+          </ul>
+          </div> -->
+        <!-- </div>//card-->
+        <!--</div>//isotope-item-->
+<!--
 		        <div class="col-12 col-lg-4">
 					<div class="card rounded-0 border-0 shadow-sm mb-5">
 						<div class="card-img-container position-relative">
@@ -413,13 +413,12 @@
 						        <li class="list-inline-item"><span class="badge badge-secondary badge-pill">HTML/SaSS</span></li>
 							</ul>
 					    </div>
-				    </div><!--//card-->
-		        </div>
+				    </div>//card-->
+		        <!--</div> -->
 
-
-	        </div><!--//row-->
-		</div><!--//container-->
-	</section>
+	        <!--</div>//row-->
+		<!--</div>//container-->
+	<!--</section> -->
 
   <a name="contact"></a>
 	<section class="section-cta py-5 bg-primary text-white">
