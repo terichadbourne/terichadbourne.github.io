@@ -14,3 +14,11 @@ wiki features.
 Please refrain from using HTML inside markdown files, as a rule. Sometimes,
 using HTML is the only way to accomplish something, like including an image with
 a custom width attribute.
+
+### Images
+
+Standard dimensions for project images:
+
+- Thumb: 600 x 400
+- Feature: 1200 x 541
+- Figure: 720 x 500
