@@ -14,8 +14,8 @@ Offline Camp</a>, an unconference tech retreat that's building the
 campfire at a time.
 
 In past developer advocacy roles, I've helped my fellow coders
-succeed by creating beginner-friendly <a href="#blog">blog
-posts</a>, tutorials, <a href="#talks">talks</a>, and code
-samples on topics including Offline First and Progressive Web Apps.
+succeed by creating beginner-friendly blog
+posts, tutorials, talks, and code
+samples on topics including Offline First,  Progressive Web Apps, and the Decentralized Web.
 
 Check out my live portfolio site at [https://teri.dev](https://teri.dev) to learn more!

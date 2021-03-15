@@ -1,3 +1,17 @@
 div#talk-topics-list {
   line-height: 2 !important;
 }
+
+.social-list-color a.contact {
+    background-color: #6376BC
+}
+
+.social-list-color a.contact:hover {
+    background-color: #4b60ae
+}
+
+/* .top-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+} */
