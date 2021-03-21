@@ -1,256 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Teri Chadbourne - Offline First Blog Tracker</title>
+  <title>Teri Chadbourne - Offline First Blog Tracker</title>
 
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A project management tool built as an offline-capable Progressive Web App">
-    <meta name="author" content="Teri Chadbourne">
-    <link rel="shortcut icon" href="favicon.ico">
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A project management tool built as an offline-capable Progressive Web App">
+  <meta name="author" content="Teri Chadbourne">
+  <link rel="shortcut icon" href="favicon.ico">
 
-    <!-- Google Font -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <!-- Google Font -->
+  <link
+    href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic'
+    rel='stylesheet' type='text/css'>
 
-    <!-- FontAwesome JS-->
-    <script type="text/javascript" src="assets/plugins/font-awesome/js/fontawesome-all.min.js"></script>
+  <!-- FontAwesome JS-->
+  <script type="text/javascript" src="assets/plugins/font-awesome/js/fontawesome-all.min.js"></script>
 
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="assets/plugins/lightbox/ekko-lightbox.css">
+  <!-- Plugins CSS -->
+  <link rel="stylesheet" href="assets/plugins/lightbox/ekko-lightbox.css">
 
 
-    <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="assets/css/theme-8.css">
+  <!-- Theme CSS -->
+  <link id="theme-style" rel="stylesheet" href="assets/css/theme-8.css">
 
 </head>
 
 <body>
 
-    <header class="header">
+  <header class="header">
 
-        <div class="top-bar theme-bg-primary-darken">
+    <div class="top-bar theme-bg-primary-darken">
 
-            <div class="container-fluid">
+      <div class="container-fluid">
 
-              <nav class="navbar navbar-expand-lg navbar-dark position-relative">
+        <nav class="navbar navbar-expand-lg navbar-dark position-relative">
 
-                <ul class="social-list list-inline mb-0">
-                  <li class="list-inline-item"><a class="text-white" href="https://github.com/terichadbourne" target="_blank"><i class="fab fa-github-alt fa-fw"></i></a></li>
-      			      <li class="list-inline-item"><a class="text-white" href="https://twitter.com/eventteri" target="_blank"><i class="fab fa-twitter fa-fw"></i></a></li>
-                  <li class="list-inline-item"><a class="text-white" href="https://medium.com/@EventTeri" target="_blank"><i class="fab fa-medium-m fa-fw"></i></a></li>
-      		        <li class="list-inline-item"><a class="text-white" href="https://www.linkedin.com/in/terichadbourne/" target="_blank"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-      		      </ul><!--//social-list-->
+          <ul class="social-list list-inline mb-0">
+            <li class="list-inline-item"><a class="text-white" href="https://github.com/terichadbourne"
+                target="_blank"><i class="fab fa-github-alt fa-fw"></i></a></li>
+            <li class="list-inline-item"><a class="text-white" href="https://twitter.com/eventteri" target="_blank"><i
+                  class="fab fa-twitter fa-fw"></i></a></li>
+            <li class="list-inline-item"><a class="text-white" href="https://medium.com/@EventTeri" target="_blank"><i
+                  class="fab fa-medium-m fa-fw"></i></a></li>
+            <li class="list-inline-item"><a class="text-white" href="https://www.linkedin.com/in/terichadbourne/"
+                target="_blank"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+          </ul>
+          <!--//social-list-->
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+            aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-                <div class="collapse navbar-collapse text-uppercase" id="navigation">
-                  <ul class="navbar-nav ml-lg-auto">
-                    <li class="nav-item mr-lg-3">
-                        <a class="nav-link" href="index.html">About</a>
-                    </li>
-                    <li class="nav-item active mr-lg-3">
-                       <a class="nav-link" href="index.html#projects">Projects <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item mr-lg-3">
-                        <a class="nav-link" href="index.html#tutorials">Tutorials</a>
-                    </li>
-      							<li class="nav-item mr-lg-3">
-      							    <a class="nav-link" href="index.html#talks">Talks</a>
-      							</li>
-                    <li class="nav-item mr-lg-3">
-                        <a class="nav-link" href="index.html#blog">Blog</a>
-                    </li>
-                    <li class="nav-item mr-lg-3">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                  </ul>
-                  <span id="slide-line"></span>
-                </div>
+          <div class="collapse navbar-collapse text-uppercase" id="navigation">
+            <ul class="navbar-nav ml-lg-auto">
+              <li class="nav-item mr-lg-3">
+                <a class="nav-link" href="index.html">About</a>
+              </li>
+              <li class="nav-item active mr-lg-3">
+                <a class="nav-link" href="index.html#projects">Projects <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item mr-lg-3">
+                <a class="nav-link" href="index.html#tutorials">Tutorials</a>
+              </li>
+              <li class="nav-item mr-lg-3">
+                <a class="nav-link" href="index.html#talks">Talks</a>
+              </li>
+              <li class="nav-item mr-lg-3">
+                <a class="nav-link" href="index.html#blog">Blog</a>
+              </li>
+              <li class="nav-item mr-lg-3">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <span id="slide-line"></span>
+          </div>
 
-              </nav>
-            </div><!--//container-->
-
-        </div><!--//top-bar-->
-
-        <div class="header-intro theme-bg-primary text-white py-5">
-	        <div class="container position-relative">
-		        <h2 class="page-heading mb-2">Offline First Blog Tracker</h2>
-		        <div class="page-heading-tagline">A project management tool built as an offline-capable Progressive Web App</div>
-	        </div><!--//container-->
-        </div><!--//header-intro-->
-
-    </header><!--//header-->
-
-    <div class="project-wrapper container py-5">
-	    <div class="row">
-	        <section class="col-12 col-lg-8">
-		        <div class="section-row">
-			        <div class="mb-5"><img class="img-fluid" src="assets/images/projects/project-blog-tracker-feature.png" alt=""></div>
-			        <h3 class="section-title">Project Background</h3>
-
-			        <p>The Offline First Blog Tracker is a Progressive Web App built
-                to track the status of blog posts in the works for the
-                <a href="https://medium.com/offline-camp" target="_blank">
-                Offline Camp Medium publication</a>, of which I'm a managing
-                editor. I developed this offline-capable project management
-                tool as a capstone project for a graduate-level JavaScript
-                course at Harvard Extension School in 2017. The
-                app uses the in-browser JavaScript database PouchDB for
-                client-side storage, syncing to a remote IBM Cloudant database
-                to share data between users when a network connection is available.
-                These two NoSQL document stores work together using the Apache
-                CouchDB Replication Protocol to manage the sync process and avoid
-                conflicts. Critical page resources are cached using service
-                workers to ensure the page can be loaded while offline.
-              </p>
-
-              <p>The <a href="https://github.com/terichadbourne/offline-first-project-manager" target="_blank">
-                GitHub repo</a> for this project includes detailed instructions
-                for running the app on your own machine. Alternatively, you can
-                view my <a href="#demo">conference talk</a> that walks through the app and the code
-                behind it, or read my 2-part <a href="#tutorials">tutorial series</a>
-                on buiding Offline First applications.
-              </p>
-
-			        <div class="mb-5">
-                <a class="btn btn-dark mb-3" href="https://github.com/terichadbourne/offline-first-project-manager" target="_blank"><i class="fab fa-github-alt mr-2"></i>View on GitHub</a>
-                <a class="btn btn-dark mb-3" href="#demo"><i class="fas fa-desktop mr-2"></i>Watch The Talk</a>
-                <a class="btn btn-dark mb-3" href="https://medium.com/ibm-watson-data-lab/making-your-app-awesome-when-the-network-isnt-part-1-3ed530c2523" target="_blank"><i class="fab fa-medium mr-2"></i>Read the Tutorials</a>
-              </div>
-
-		        <!--</div>//section-row-->
-      <a name="demo"></a>
-      <div class="section-row">
-      <h3 class="section-title">Conference Talk with Live Demo</h3>
-      <p>This project is the subject of my conference talk, <strong>Offline First:
-        Making Your App Awesome When the Network Isn't</strong>, which is geared
-        toward developers who are new to Offline First. The talk, recorded at the
-        We RISE Tech Conference in June 2018, covers how
-        PouchDB, CouchDB, and service workers make it possible to build an
-        offline-capable app with only client-side code.</p>
-      <div class="media mb-5 flex-column flex-lg-row">
-        <div style="width:100%;" class="talk-media-holder embed-responsive embed-responsive-16by9 mr-md-3">
-            <iframe class="embed-responsive-item"  width="560" height="315" src="https://player.vimeo.com/video/280670846" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div><!--//media-->
-    </div> <!--//section-row -->
-
-    <a name="tutorials"></a>
-    <div class="section-row">
-    <h3 class="section-title">Tutorial Series</h3>
-    <p>In preparation for my talk, I wrote a 2-part, beginner-friendly tutorial
-      series that walks readers through the steps I took to build my first
-      offline-capable Progressive Web App using only client-side code. You can
-      read both articles on Medium:</p>
-    <ul class="skills-list list-unstyled text-secondary">
-      <li class="mb-2"><a href="https://medium.com/ibm-watson-data-lab/making-your-app-awesome-when-the-network-isnt-part-1-3ed530c2523" target="_blank">
-        <i class="fas fa-check mr-2 text-primary"></i>Enabling
-        offline data storage, sync, and sharing with PouchDB and Apache CouchDB™</a></li>
-      <li class="mb-2"><a href="https://medium.com/ibm-watson-data-lab/making-your-app-awesome-when-the-network-isnt-part-2-669ee36e2f81" target="_blank">
-        <i class="fas fa-check mr-2 text-primary"></i>Ensuring
-          quick page loads — offline or not — with a service worker</a></li>
-    </ul>
-  </div> <!--//section-row -->
-
-  <div class="section-row">
-    <h3 class="section-title">Offline First Functionality</h3>
-    <p>The Offline First approach to web development plans for the most constrained network environment first, enabling a great user experience even while the device is offline or has only an intermittent connection, and providing progressive enhancement as network conditions improve. This design also makes apps incredibly performant (fast!) on the best of networks.</p>
-    <p>PouchDB, CouchDB, service workers, and a web app manifest are the primary tools that turn this simple project management tool into a high-performance, offline-capable Progressive Web App.</p>
-    <p><strong>Data stays safe on your device, even while it's offline.</strong> Persistance of data entered by the user is achieved using the in-browser database PouchDB. This will allow your data to survive between sessions and when disconnected from the network. (Whether you're offline at an event or back in the office on your trusty Wi-Fi, you can still add new projects and modify existing ones.)</p>
-    <p><strong>Data syncs between devices when a connection is available.</strong> When a connection is available, the data is synced from the local device to a CouchDB database in the cloud, and can thus be shared across multiple devices or users. (Managing a project with a partner or need to access the data on both your phone and your laptop? No problem!)</p>
-    <p><strong>The app loads quickly, even while offline.</strong> To keep the app itself functional while offline, a service worker is used to cache page resources (the most important HTML, CSS, and JavaScript files) when the web application is first visited. Each device must have a connection for this first visit, after which the app will be fully functional even while offline or in shoddy network conditions. (No more error messages or frustratingly slow page loads.)</p>
-    <p><strong>The app can be installed on a mobile device.</strong> In combination with the service worker used for caching, a web app manifest containing metadata allows the app to become a Progressive Web App, an enhanced website that can be installed on a mobile device and can then be used with or without an internet connection. (It's secretly still a website, but you can access it through one of those handy dandy little app icons on your homescreen!)</p>
-    <p>Explore the code in my <a href="https://github.com/terichadbourne/offline-first-project-manager" target="_blank">GitHub repository</a>, read my <a href="#tutorials">tutorials</a>, or watch my <a href="#demo">conference talk</a> to see how the Offline First design is applied.
-  </div> <!--//section-row -->
-
-</section>
-
-	        <aside class="project-sidebar col-12 col-lg-4 pl-lg-5">
-		        <div class="project-sidebar-inner bg-white p-4">
-			        <div class="sidebar-row mb-5">
-				         <h3 class="sidebar-title mb-4">Project Info</h3>
-				         <ul class="list-unstyled pl-2">
-					         <!-- <li class="mb-4"><i class="fas fa-building mr-3 text-primary" data-fa-transform="grow-6 down-2"></i><strong>Client:</strong> Basecamp</li> -->
-					         <!-- <li class="mb-4"><i class="fas fa-external-link-alt mr-3 text-primary" data-fa-transform="grow-6 down-2"></i><strong>Site Link:</strong> <a href="http://toilettranscripts.com">toilettranscripts.com</a></li> -->
-					         <li><i class="fas fa-wrench mr-3 text-primary" data-fa-transform="grow-6 down-2"></i><strong> Type:</strong> Front End (PWA)</li>
-                   <li><i class="fas fa-clock mr-3 text-primary" data-fa-transform="grow-6 down-2"></i><strong> Built:</strong> December 2017</li>
-				         </ul>
-			        </div>
-		        <div class="sidebar-row">
-				        <h3 class="sidebar-title mb-3">Technologies Used</h3>
-			            <div class="webdev-icons row mb-5 align-items-center">
-                  <div class="webdev-icon col-2 col-md-3 mr-0 mb-4"><img class="img-fluid" src="assets/images/webdev-icons/pouchdb.svg"></div>
-                  <div class="webdev-icon col-2 col-md-3 mr-0 mb-4"><img class="img-fluid" src="assets/images/webdev-icons/couchdb-relax.svg"></div>
-                  <div class="webdev-icon col-2 col-md-3 mr-0 mb-4"><img class="img-fluid" src="assets/images/webdev-icons/cloudant.svg"></div>
-                  <div class="webdev-icon col-2 col-md-3 mr-0 mb-4"><img class="img-fluid" src="assets/images/webdev-icons/pwa.svg"></div>
-                  <div class="webdev-icon col-2 col-md-3 mr-0 mb-4"><img class="img-fluid" src="assets/images/webdev-icons/jquery-alt.svg"></div>
-                  <div class="webdev-icon col-2 col-md-3 mr-0 mb-4"><img class="img-fluid" src="assets/images/webdev-icons/javascript.svg"></div>
-                  <div class="webdev-icon col-2 col-md-3 mr-0 mb-4"><img class="img-fluid" src="assets/images/webdev-icons/html5.svg"></div>
-                  <div class="webdev-icon col-2 col-md-3 mr-0 mb-4"><img class="img-fluid" src="assets/images/webdev-icons/css3.svg"></div>
-				        </div>
-                  <a class="btn btn-dark mb-3" href="https://github.com/terichadbourne/offline-first-project-manager" target="_blank"><i class="fab fa-github-alt mr-2"></i>View on GitHub</a>
-                  <a class="btn btn-dark mb-3" href="#demo"><i class="fas fa-desktop mr-2"></i>Watch The Talk</a>
-                  <a class="btn btn-dark mb-3" href="https://medium.com/ibm-watson-data-lab/making-your-app-awesome-when-the-network-isnt-part-1-3ed530c2523" target="_blank"><i class="fab fa-medium mr-2"></i>Read the Tutorials</a>
-		           </div><!--//section-row-->
-		        </div><!--//project-sidebar-inner-->
-	        </aside>
-	    </div><!--//row-->
-    </div><!--//container-->
-
-    <section>
-      <div class="text-center mb-5">
-          <a class="btn btn-primary" href="index.html#projects">View all projects</a>
+        </nav>
       </div>
-    </section>
+      <!--//container-->
+
+    </div>
+    <!--//top-bar-->
+
+    <div class="header-intro theme-bg-primary text-white py-5">
+      <div class="container position-relative">
+        <h2 class="page-heading mb-2">Offline First Blog Tracker</h2>
+        <div class="page-heading-tagline">A project management tool built as an offline-capable Progressive Web App
+        </div>
+      </div>
+      <!--//container-->
+    </div>
+    <!--//header-intro-->
+
+  </header>
+  <!--//header-->
+
+  <div class="project-wrapper container py-5">
+    <div class="row">
+      <section class="col-12 col-lg-8">
+        <div class="section-row">
+          <div class="mb-5"><img class="img-fluid" src="assets/images/projects/project-blog-tracker-feature.png" alt="">
+          </div>
+          <h3 class="section-title">Project Background</h3>
+
+          <p>The Offline First Blog Tracker is a Progressive Web App built
+            to track the status of blog posts in the works for the
+            <a href="https://medium.com/offline-camp" target="_blank">
+              Offline Camp Medium publication</a>, of which I'm a managing
+            editor. I developed this offline-capable project management
+            tool as a capstone project for a graduate-level JavaScript
+            course at Harvard Extension School in 2017. The
+            app uses the in-browser JavaScript database PouchDB for
+            client-side storage, syncing to a remote IBM Cloudant database
+            to share data between users when a network connection is available.
+            These two NoSQL document stores work together using the Apache
+            CouchDB Replication Protocol to manage the sync process and avoid
+            conflicts. Critical page resources are cached using service
+            workers to ensure the page can be loaded while offline.
+          </p>
+
+          <p>The <a href="https://github.com/terichadbourne/offline-first-project-manager" target="_blank">
+              GitHub repo</a> for this project includes detailed instructions
+            for running the app on your own machine. Alternatively, you can
+            view my <a href="#demo">conference talk</a> that walks through the app and the code
+            behind it, or read my 2-part <a href="#tutorials">tutorial series</a>
+            on buiding Offline First applications.
+          </p>
+
+          <div class="mb-5">
+            <a class="btn btn-dark mb-3" href="https://github.com/terichadbourne/offline-first-project-manager"
+              target="_blank"><i class="fab fa-github-alt mr-2"></i>View on GitHub</a>
+            <a class="btn btn-dark mb-3" href="#demo"><i class="fas fa-desktop mr-2"></i>Watch The Talk</a>
+            <a class="btn btn-dark mb-3"
+              href="https://medium.com/ibm-watson-data-lab/making-your-app-awesome-when-the-network-isnt-part-1-3ed530c2523"
+              target="_blank"><i class="fab fa-medium mr-2"></i>Read the Tutorials</a>
+          </div>
+
+          <!--</div>//section-row-->
+          <a name="demo"></a>
+          <div class="section-row">
+            <h3 class="section-title">Conference Talk with Live Demo</h3>
+            <p>This project is the subject of my conference talk, <strong>Offline First:
+                Making Your App Awesome When the Network Isn't</strong>, which is geared
+              toward developers who are new to Offline First. The talk, recorded at the
+              We RISE Tech Conference in June 2018, covers how
+              PouchDB, CouchDB, and service workers make it possible to build an
+              offline-capable app with only client-side code.</p>
+            <div class="media mb-5 flex-column flex-lg-row">
+              <div style="width:100%;" class="talk-media-holder embed-responsive embed-responsive-16by9 mr-md-3">
+                <iframe class="embed-responsive-item" width="560" height="315"
+                  src="https://player.vimeo.com/video/280670846" frameborder="0" allow="autoplay; encrypted-media"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+            <!--//media-->
+          </div>
+          <!--//section-row -->
+
+          <a name="tutorials"></a>
+          <div class="section-row">
+            <h3 class="section-title">Tutorial Series</h3>
+            <p>In preparation for my talk, I wrote a 2-part, beginner-friendly tutorial
+              series that walks readers through the steps I took to build my first
+              offline-capable Progressive Web App using only client-side code. You can
+              read both articles on Medium:</p>
+            <ul class="skills-list list-unstyled text-secondary">
+              <li class="mb-2"><a
+                  href="https://medium.com/ibm-watson-data-lab/making-your-app-awesome-when-the-network-isnt-part-1-3ed530c2523"
+                  target="_blank">
+                  <i class="fas fa-check mr-2 text-primary"></i>Enabling
+                  offline data storage, sync, and sharing with PouchDB and Apache CouchDB™</a></li>
+              <li class="mb-2"><a
+                  href="https://medium.com/ibm-watson-data-lab/making-your-app-awesome-when-the-network-isnt-part-2-669ee36e2f81"
+                  target="_blank">
+                  <i class="fas fa-check mr-2 text-primary"></i>Ensuring
+                  quick page loads — offline or not — with a service worker</a></li>
+            </ul>
+          </div>
+          <!--//section-row -->
+
+          <div class="section-row">
+            <h3 class="section-title">Offline First Functionality</h3>
+            <p>The Offline First approach to web development plans for the most constrained network environment first,
+              enabling a great user experience even while the device is offline or has only an intermittent connection,
+              and providing progressive enhancement as network conditions improve. This design also makes apps
+              incredibly performant (fast!) on the best of networks.</p>
+            <p>PouchDB, CouchDB, service workers, and a web app manifest are the primary tools that turn this simple
+              project management tool into a high-performance, offline-capable Progressive Web App.</p>
+            <p><strong>Data stays safe on your device, even while it's offline.</strong> Persistance of data entered by
+              the user is achieved using the in-browser database PouchDB. This will allow your data to survive between
+              sessions and when disconnected from the network. (Whether you're offline at an event or back in the office
+              on your trusty Wi-Fi, you can still add new projects and modify existing ones.)</p>
+            <p><strong>Data syncs between devices when a connection is available.</strong> When a connection is
+              available, the data is synced from the local device to a CouchDB database in the cloud, and can thus be
+              shared across multiple devices or users. (Managing a project with a partner or need to access the data on
+              both your phone and your laptop? No problem!)</p>
+            <p><strong>The app loads quickly, even while offline.</strong> To keep the app itself functional while
+              offline, a service worker is used to cache page resources (the most important HTML, CSS, and JavaScript
+              files) when the web application is first visited. Each device must have a connection for this first visit,
+              after which the app will be fully functional even while offline or in shoddy network conditions. (No more
+              error messages or frustratingly slow page loads.)</p>
+            <p><strong>The app can be installed on a mobile device.</strong> In combination with the service worker used
+              for caching, a web app manifest containing metadata allows the app to become a Progressive Web App, an
+              enhanced website that can be installed on a mobile device and can then be used with or without an internet
+              connection. (It's secretly still a website, but you can access it through one of those handy dandy little
+              app icons on your homescreen!)</p>
+            <p>Explore the code in my <a href="https://github.com/terichadbourne/offline-first-project-manager"
+                target="_blank">GitHub repository</a>, read my <a href="#tutorials">tutorials</a>, or watch my <a
+                href="#demo">conference talk</a> to see how the Offline First design is applied.
+          </div>
+          <!--//section-row -->
+
+      </section>
+
+      <aside class="project-sidebar col-12 col-lg-4 pl-lg-5">
+        <div class="project-sidebar-inner bg-white p-4">
+          <div class="sidebar-row mb-5">
+            <h3 class="sidebar-title mb-4">Project Info</h3>
+            <ul class="list-unstyled pl-2">
+              <!-- <li class="mb-4"><i class="fas fa-building mr-3 text-primary" data-fa-transform="grow-6 down-2"></i><strong>Client:</strong> Basecamp</li> -->
+              <!-- <li class="mb-4"><i class="fas fa-external-link-alt mr-3 text-primary" data-fa-transform="grow-6 down-2"></i><strong>Site Link:</strong> <a href="http://toilettranscripts.com">toilettranscripts.com</a></li> -->
+              <li><i class="fas fa-wrench mr-3 text-primary" data-fa-transform="grow-6 down-2"></i><strong>
+                  Type:</strong> Front End (PWA)</li>
+              <li><i class="fas fa-clock mr-3 text-primary" data-fa-transform="grow-6 down-2"></i><strong>
+                  Built:</strong> December 2017</li>
+            </ul>
+          </div>
+          <div class="sidebar-row">
+            <h3 class="sidebar-title mb-3">Technologies Used</h3>
+            <div class="webdev-icons row mb-5 align-items-center">
+              <div class="webdev-icon col-2 col-md-3 mr-0 mb-4"><img class="img-fluid"
+                  src="assets/images/webdev-icons/pouchdb.svg"></div>
+              <div class="webdev-icon col-2 col-md-3 mr-0 mb-4"><img class="img-fluid"
+                  src="assets/images/webdev-icons/couchdb-relax.svg"></div>
+              <div class="webdev-icon col-2 col-md-3 mr-0 mb-4"><img class="img-fluid"
+                  src="assets/images/webdev-icons/cloudant.svg"></div>
+              <div class="webdev-icon col-2 col-md-3 mr-0 mb-4"><img class="img-fluid"
+                  src="assets/images/webdev-icons/pwa.svg"></div>
+              <div class="webdev-icon col-2 col-md-3 mr-0 mb-4"><img class="img-fluid"
+                  src="assets/images/webdev-icons/jquery-alt.svg"></div>
+              <div class="webdev-icon col-2 col-md-3 mr-0 mb-4"><img class="img-fluid"
+                  src="assets/images/webdev-icons/javascript.svg"></div>
+              <div class="webdev-icon col-2 col-md-3 mr-0 mb-4"><img class="img-fluid"
+                  src="assets/images/webdev-icons/html5.svg"></div>
+              <div class="webdev-icon col-2 col-md-3 mr-0 mb-4"><img class="img-fluid"
+                  src="assets/images/webdev-icons/css3.svg"></div>
+            </div>
+            <a class="btn btn-dark mb-3" href="https://github.com/terichadbourne/offline-first-project-manager"
+              target="_blank"><i class="fab fa-github-alt mr-2"></i>View on GitHub</a>
+            <a class="btn btn-dark mb-3" href="#demo"><i class="fas fa-desktop mr-2"></i>Watch The Talk</a>
+            <a class="btn btn-dark mb-3"
+              href="https://medium.com/ibm-watson-data-lab/making-your-app-awesome-when-the-network-isnt-part-1-3ed530c2523"
+              target="_blank"><i class="fab fa-medium mr-2"></i>Read the Tutorials</a>
+          </div>
+          <!--//section-row-->
+        </div>
+        <!--//project-sidebar-inner-->
+      </aside>
+    </div>
+    <!--//row-->
+  </div>
+  <!--//container-->
+
+  <section>
+    <div class="text-center mb-5">
+      <a class="btn btn-primary" href="index.html#projects">View all projects</a>
+    </div>
+  </section>
 
   <section class="section-cta py-5 bg-primary text-white">
-		<div class="container">
-			<div class="text-center">
-			    <img class="profile-small d-inline-block mx-auto rounded-circle mb-3" src="assets/images/profile-cropped-480.png" alt="">
-		    </div>
-		    <h3 class="section-title font-weight-bold text-center mb-2">How can I help?</h3>
-		    <div class="section-intro mx-auto text-center mb-4">
-          Looking for a front-end developer to build your next web app? Need a developer advocate with a knack for making complex technical topics accessible to beginners? Let's talk.
-		    </div>
+    <div class="container">
+      <div class="text-center">
+        <img class="profile-small d-inline-block mx-auto rounded-circle mb-3"
+          src="assets/images/profile-cropped-480.png" alt="">
+      </div>
+      <h3 class="section-title font-weight-bold text-center mb-2">How can I help?</h3>
+      <div class="section-intro mx-auto text-center mb-4">
+        Looking for a front-end developer to build your next web app? Need a developer advocate with a knack for making
+        complex technical topics accessible to beginners? Let's talk.
+      </div>
 
-		    <div class="text-center mb-3">
-          <a class="btn theme-btn-on-bg download-resume mr-2" href="Resume-Teri-Chadbourne-2021-03-14.pdf" target="_blank">View my resume</a>
-          <a class="theme-btn-on-bg btn" href="mailto:teri@teri.dev">Drop me a line</a>
-		    </div>
-        <div class="text-center mb-3">
-          <a class="btn theme-btn-on-bg mx-auto" href="contact.html#protoschool">Reach out about ProtoSchool</a>
-		    </div>
-        <ul class="social-list-square list-inline text-center mb-0">
-          <li class="list-inline-item mb-3 mb-lg-0"><a href="https://github.com/terichadbourne" target="_blank"><i class="fab fa-github-alt fa-fw text-white"></i></a></li>
-          <li class="list-inline-item mb-3 mb-lg-0"><a href="https://twitter.com/eventteri" target="_blank"><i class="fab fa-twitter fa-fw text-white"></i></a></li>
-          <li class="list-inline-item mb-3 mb-lg-0"><a href="https://medium.com/@EventTeri" target="_blank"><i class="fab fa-medium-m fa-fw text-white"></i></a></li>
-          <li class="list-inline-item mb-3 mb-lg-0"><a href="https://www.linkedin.com/in/terichadbourne/" target="_blank"><i class="fab fa-linkedin-in fa-fw text-white"></i></a></li>
-          <li class="list-inline-item mb-3 mb-lg-0"><a href="mailto:teri@teri.dev"><i class="far fa-envelope fa-fw text-white"></i></a></li>
-          <li class="list-inline-item mb-3 mb-lg-0"><a href="tel:8576266205"><i class="fas fa-mobile-alt fa-fw text-white"></i></a></li>
-        </ul><!--//social-list-->
-		</div><!--//container-->
-	</section>
+      <div class="text-center mb-3">
+        <a class="btn theme-btn-on-bg download-resume mr-2" href="Resume-Teri-Chadbourne-2021-03-14.pdf"
+          target="_blank">View my resume</a>
+        <a class="theme-btn-on-bg btn" href="mailto:teri@teri.dev">Drop me a line</a>
+      </div>
+      <div class="text-center mb-3">
+        <a class="btn theme-btn-on-bg mx-auto" href="contact.html#protoschool">Reach out about ProtoSchool</a>
+      </div>
+      <ul class="social-list-square list-inline text-center mb-0">
+        <li class="list-inline-item mb-3 mb-lg-0"><a href="https://github.com/terichadbourne" target="_blank"><i
+              class="fab fa-github-alt fa-fw text-white"></i></a></li>
+        <li class="list-inline-item mb-3 mb-lg-0"><a href="https://twitter.com/eventteri" target="_blank"><i
+              class="fab fa-twitter fa-fw text-white"></i></a></li>
+        <li class="list-inline-item mb-3 mb-lg-0"><a href="https://medium.com/@EventTeri" target="_blank"><i
+              class="fab fa-medium-m fa-fw text-white"></i></a></li>
+        <li class="list-inline-item mb-3 mb-lg-0"><a href="https://www.linkedin.com/in/terichadbourne/"
+            target="_blank"><i class="fab fa-linkedin-in fa-fw text-white"></i></a></li>
+        <li class="list-inline-item mb-3 mb-lg-0"><a href="mailto:teri@teri.dev"><i
+              class="far fa-envelope fa-fw text-white"></i></a></li>
+        <li class="list-inline-item mb-3 mb-lg-0"><a href="tel:8576266205"><i
+              class="fas fa-mobile-alt fa-fw text-white"></i></a></li>
+      </ul>
+      <!--//social-list-->
+    </div>
+    <!--//container-->
+  </section>
 
-    <footer class="footer text-light text-center py-2">
-	    <small class="copyright">Template Copyright &copy; <a class="text-light" href="https://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a></small>
-    </footer>
+  <footer class="footer text-light text-center py-2">
+    <small class="copyright">Template Copyright &copy; <a class="text-light" href="https://themes.3rdwavemedia.com/"
+        target="_blank">3rd Wave Media</a></small>
+  </footer>
 
-    <!-- Javascript -->
-    <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+  <!-- Javascript -->
+  <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
+  <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
 
-    <!--Page Specific JS -->
-    <script type="text/javascript" src="assets/plugins/lightbox/ekko-lightbox.min.js"></script>
+  <!--Page Specific JS -->
+  <script type="text/javascript" src="assets/plugins/lightbox/ekko-lightbox.min.js"></script>
 
-    <!-- Custom JS -->
-    <script type="text/javascript" src="assets/js/main.js"></script>
-    <script type="text/javascript" src="assets/js/lightbox-custom.js"></script>
+  <!-- Custom JS -->
+  <script type="text/javascript" src="assets/js/main.js"></script>
+  <script type="text/javascript" src="assets/js/lightbox-custom.js"></script>
 
 </body>
+
 </html>
