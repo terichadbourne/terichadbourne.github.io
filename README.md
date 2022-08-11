@@ -1,14 +1,14 @@
 ### Teri Chadbourne
-#### Web Developer | Developer Advocate
+#### Software Engineer
 
 
-I'm a front-end web developer, developer advocate, and open-source project maintainer
+I'm an experienced front-end web developer, developer advocate, and open-source project maintainer
 with a passion for education and events. As lead maintainer and developer of
 <a href="https://proto.school" target="_blank">ProtoSchool</a>,
-I build interactive coding tutorials on decentralized web protocols and nurture
+I built interactive coding tutorials on decentralized web protocols and nurtured
 the growth of learning communities around the globe.
 
-I'm proud to co-organize <a href="http://offlinefirst.org/camp" target="_blank">
+I'm proud to have co-organized <a href="http://offlinefirst.org/camp" target="_blank">
 Offline Camp</a>, an unconference tech retreat that's building the
 <a href="http://offlinefirst.org/" target="_blank">Offline First</a> community, one
 campfire at a time.
