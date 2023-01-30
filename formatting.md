@@ -8,5 +8,5 @@
 * SLIDE 1412 × 966 / 1420 × 974 (for carousel of indiv project page)
 
 ## Blogs
-* THUMB 1200 x 465 (for bothth listings on index.html and top of specific post)
+* THUMB 1200 x 465 (for both listings on index.html and top of specific post)
 * IMAGE 1440 x 860 (for image in body of post)
